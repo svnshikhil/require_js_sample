@@ -1,19 +1,13 @@
 <template>
-    <div>
-      {{text}}
-      <data-table></data-table>
-    </div>
+    <div>{{text}}</div>
 </template>
 
 <script>
-define(["Vue", "vue!components/table"], function(Vue, table) {
+define(["Vue"], function(Vue) {
   var result = Vue.extend({
     template: template,
-    components: {
-      "data-table": table
-    },
     data: function() {
-      return { text: "Hello from mainFrame" };
+      return { text: "Hello from table" };
     }
   });
 
